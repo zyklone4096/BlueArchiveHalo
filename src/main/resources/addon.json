@@ -1,0 +1,8 @@
+{
+  "uuid": "%uuid%",
+  "name": "BlueArchiveHalo",
+  "mainClass": "me.h3xadecimal.bluearchivehalo.Addon",
+  "description": "lol",
+  "author": "H3xadecimal",
+  "category": 4
+}
