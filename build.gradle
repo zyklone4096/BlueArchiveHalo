@@ -12,6 +12,11 @@ buildscript {
         classpath 'net.minecraftforge.gradle:ForgeGradle:2.1-SNAPSHOT'
     }
 }
+
+plugins {
+    id 'de.undercouch.download' version '4.0.0'
+}
+
 apply plugin: 'net.minecraftforge.gradle.forge'
 
 /*
@@ -86,3 +91,17 @@ reobf {
         useNotchSrg()
     }
 }
+
+// CNM Could not find method src() for arguments [https://dl.labymod.net/latest/api/files/lm_api_mc1.16.5.jar] on task ':downloadAPI' of type net.minecraftforge.gradle.tasks.Download
+//task downloadAPI(type: Download) {
+//    group("labymod")
+//
+//    File libraryDirectory = new File("libs/")
+//
+//    if (!libraryDirectory.exists()) {
+//        libraryDirectory.mkdirs()
+//    }
+//
+//    src "https://dl.labymod.net/latest/api/files/lm_api_mc1.16.5.jar"
+//    dest 'libs/'
+//}
